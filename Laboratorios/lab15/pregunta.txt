@@ -1,0 +1,26 @@
+¿Qué otras formas de autentificación existen?
+1.  Autenticación basada en contraseña Usuario + contraseña (hash con
+    bcrypt o Argon2). Ventajas: Simple. Desventajas: Riesgo si la
+    contraseña es débil.
+
+2.  Autenticación con tokens (JWT) Se genera un token que el cliente
+    envía en cada request. Ventajas: Escalable, sin estado. Desventajas:
+    Manejo más complejo de seguridad.
+
+3.  OAuth / Login con terceros Inicio de sesión con Google, Facebook,
+    GitHub, etc. Ventajas: Mejor experiencia de usuario, no manejas
+    contraseñas. Desventajas: Dependencia de servicios externos.
+
+4.  Magic Links (sin contraseña) El usuario recibe un link por correo
+    para iniciar sesión. Ventajas: Muy fácil para el usuario.
+    Desventajas: Depende del correo.
+
+5.  Autenticación multifactor (MFA / 2FA) Combina algo que sabes + algo
+    que tienes. Ejemplo: contraseña + código SMS o app. Ventajas: Mucho
+    más segura. Desventajas: Más pasos para el usuario.
+
+6.  Biométrica Huella, rostro, etc. Ventajas: Muy cómoda. Desventajas:
+    Requiere hardware especial.
+
+7.  API Keys Claves únicas para acceder a APIs. Ventajas: Simple para
+    servicios. Desventajas: No es para usuarios finales.
